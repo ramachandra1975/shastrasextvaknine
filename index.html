@@ -1417,5 +1417,220 @@ III has already treated.
 </footer>
 
 </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-void:#0e0605; --bg-panel:#160a08; --bg-panel-2:#1c0d0a;
+    --crimson:#7a1f1f; --crimson-bright:#a12c2c;
+    --gold:#c9a24b; --gold-soft:#e2c67f; --gold-dim:#8a6f3a;
+    --ivory:#ece2d0; --ivory-dim:#bfb29a; --rule:#3a1f18; --shadow:rgba(0,0,0,0.55);
+  }
+  *{box-sizing:border-box;}
+  body{background:radial-gradient(ellipse at top, #1a0d0a 0%, var(--bg-void) 60%);color:var(--ivory);font-family:'Spectral',serif;line-height:1.75;margin:0;padding:0;}
+  .wrap{max-width:880px;margin:0 auto;padding:64px 28px 120px;}
+  header.title-block{text-align:center;margin-bottom:56px;border-bottom:1px solid var(--rule);padding-bottom:40px;}
+  .kicker{font-family:'Cinzel',serif;letter-spacing:0.18em;color:var(--gold-dim);font-size:0.78rem;text-transform:uppercase;margin-bottom:14px;}
+  h1{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:2.05rem;font-weight:600;margin:0 0 12px;line-height:1.3;}
+  .subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ivory-dim);font-size:1.15rem;}
+  .deva{font-family:'Noto Serif Devanagari',serif;}
+  nav.crumb{font-family:'EB Garamond',serif;font-size:0.9rem;color:var(--gold-dim);text-align:center;margin-top:16px;}
+  section.module-intro{background:var(--bg-panel);border:1px solid var(--rule);border-left:3px solid var(--crimson-bright);padding:26px 30px;margin-bottom:44px;border-radius:2px;}
+  h2.module-h{font-family:'Cinzel',serif;color:var(--gold);font-size:1.55rem;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-top:64px;margin-bottom:28px;}
+  h3.sec-h{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:1.15rem;margin-top:38px;margin-bottom:14px;letter-spacing:0.01em;}
+  p{margin:0 0 18px;font-size:1.03rem;color:var(--ivory);text-align:justify;}
+  .note-box{background:var(--bg-panel-2);border:1px solid var(--rule);border-left:3px solid var(--gold-dim);padding:18px 22px;margin:22px 0;font-family:'EB Garamond',serif;font-size:0.96rem;color:var(--ivory-dim);}
+  .note-box strong{color:var(--gold-soft);font-family:'Spectral',serif;}
+  .tier-tag{display:inline-block;font-family:'Cinzel',serif;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;padding:3px 9px;border-radius:2px;margin-right:8px;margin-bottom:4px;}
+  .tier-textual{background:rgba(122,31,31,0.35);color:#e0a9a9;border:1px solid var(--crimson);}
+  .tier-empirical{background:rgba(201,162,75,0.18);color:var(--gold-soft);border:1px solid var(--gold-dim);}
+  .tier-synthetic{background:rgba(120,120,120,0.18);color:var(--ivory-dim);border:1px solid #5a5248;}
+  .tier-frontier{background:rgba(90,140,150,0.16);color:#9fd2d8;border:1px solid #4a7a82;}
+  .tier-formal{background:rgba(140,110,180,0.18);color:#c9b8e6;border:1px solid #6e5a8a;}
+  blockquote{border-left:2px solid var(--gold-dim);margin:22px 0;padding:6px 0 6px 22px;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ivory-dim);font-size:1.08rem;}
+  table{width:100%;border-collapse:collapse;margin:24px 0;font-family:'EB Garamond',serif;font-size:0.95rem;}
+  table th{background:var(--bg-panel-2);color:var(--gold-soft);text-align:left;padding:10px 14px;border-bottom:2px solid var(--gold-dim);font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.04em;text-transform:uppercase;}
+  table td{padding:10px 14px;border-bottom:1px solid var(--rule);color:var(--ivory-dim);vertical-align:top;}
+  code, .formal{font-family:'EB Garamond',monospace;background:var(--bg-panel-2);padding:1px 6px;border-radius:2px;color:var(--gold-soft);}
+  pre{background:var(--bg-panel-2);border:1px solid var(--rule);padding:16px 20px;overflow-x:auto;font-family:monospace;font-size:0.9rem;color:var(--ivory-dim);border-radius:3px;margin:20px 0;}
+  ol.ref-list{font-family:'EB Garamond',serif;font-size:0.92rem;color:var(--ivory-dim);padding-left:22px;}
+  ol.ref-list li{margin-bottom:8px;}
+  .synth-close{background:linear-gradient(180deg, var(--bg-panel) 0%, var(--bg-void) 100%);border:1px solid var(--gold-dim);border-radius:3px;padding:30px 32px;margin-top:52px;}
+  .synth-close h3{margin-top:0;}
+  footer.nav-footer{margin-top:70px;padding-top:26px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;font-family:'Cinzel',serif;font-size:0.85rem;color:var(--gold-dim);}
+  footer.nav-footer a{color:var(--gold-soft);text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="title-block">
+  <div class="kicker">Series A Extended · Part X of XII · Module II</div>
+  <h1>Combinatorial Syntax<br><span class="deva" style="font-size:1.3rem;color:var(--gold-dim);">संयोगव्याकरण</span></h1>
+  <div class="subtitle">From Karaṇa to Aṅgahāra — and Into Its Formal Depths: Recakas, Sequence, and the Mathematics of a Closed System</div>
+  <nav class="crumb">Module I: The Karaṇa Defined · <strong>Module II: Combinatorial Syntax</strong> · Module III: The Body's Grammar · Module IV: Transmission and Method</nav>
+</header>
+
+<section class="module-intro">
+  <p style="margin:0;">This module's original eight sections established that karaṇas combine into aṅgahāras and aṅgahāras into piṇḍībandhas through fixed, rule-governed sequence — a three-tier compositional hierarchy structurally parallel to, though considerably more closed than, the phoneme-word-sentence hierarchy of a natural language. Sections 9 through 11, added below, take that structural claim to the level of depth its own precision invites: not further analogy, but the actual mathematics — formal language theory, combinatorics, group theory, graph theory, and information theory — that a claim this specific can be stated in, tested against, and honestly bounded by.</p>
+</section>
+
+<h2 class="module-h">Section 1 — The Four Recakas as Sub-Components</h2>
+
+<p><span class="tier-textual tier-tag">Textual Analysis</span>Before a karaṇa combines with other karaṇas into larger sequences, the Nāṭyaśāstra documents a further layer of structure operating beneath the karaṇa itself: the recakas, four distinct circular or rotational movements assigned respectively to the hand (hasta-recaka), the foot (pāda-recaka), the waist (kaṭi-recaka), and the neck (grīvā-recaka). A recaka is smaller in scope than a full karaṇa — it names a specific rotational or circling quality of movement in a single body region rather than the coordinated whole-body configuration a karaṇa names — and karaṇas are documented as frequently built around one or more recakas providing the specific rotational character that distinguishes one karaṇa from another otherwise similar one. This gives the karaṇa system an internal layering the phoneme analogy of Module I did not yet make explicit: if the karaṇa is analogous to a phoneme, the recaka is analogous to a distinctive feature — the smaller articulatory parameter (voicing, place of articulation, manner of articulation) that combines with other such parameters to produce a phoneme, rather than a phoneme in its own right. Just as two phonemes can differ by a single distinctive feature while remaining otherwise identical, two karaṇas can differ by the substitution of one recaka for another while sharing an otherwise identical sthāna and cārī — a combinatorial economy that allows a comparatively small underlying inventory of components to generate the full 108-item karaṇa list without requiring 108 entirely unrelated, independently memorised movement-patterns.</p>
+
+<h2 class="module-h">Section 2 — The Aṅgahāra: Karaṇas in Sequence</h2>
+
+<p><span class="tier-textual tier-tag">Textual Analysis</span>An aṅgahāra is a fixed sequence of karaṇas — traditionally enumerated as a set of thirty-two named sequences, each composed of a specific number of specific karaṇas performed in a specific order — functioning as the next level up in the system's own compositional hierarchy. Where the karaṇa is a single, indivisible motor event, the aṅgahāra is an ordered chain of such events, and its own dramaturgical and aesthetic significance depends directly on that ordering: the same set of karaṇas performed in a different sequence does not constitute the same aṅgahāra, in the same way the same set of phonemes rearranged into a different order does not constitute the same word. This is the level at which the karaṇa system's combinatorial claim becomes concrete and checkable rather than merely asserted by analogy: a closed inventory of 108 minimal units, combined according to fixed, named rules of sequence, generates a further closed inventory of thirty-two larger compositional units, each with its own name and its own specific internal structure — precisely the two-tier structure that characterises phonology's own relationship to morphology in a spoken language.</p>
+
+<h2 class="module-h">Section 3 — Why Sequence-Order Carries Real Weight</h2>
+
+<p><span class="tier-textual tier-tag">Textual Analysis</span>The aṅgahāra's dependence on fixed sequence rather than free recombination forecloses a possible misreading of the karaṇa system as an open toolkit from which a choreographer might draw karaṇas in any order convenient to a given composition. The Nāṭyaśāstra's own treatment of the thirty-two aṅgahāras documents named, specific sequences rather than a general permission to combine karaṇas freely, directly analogous to word order and morpheme order in a language being rule-governed rather than free. A performer who executes all the correct karaṇas belonging to a given aṅgahāra but in the wrong order has not performed a looser or more creative version of that aṅgahāra; on the tradition's own terms, they have performed something else entirely — exactly the judgment a listener would make of a sentence whose individual words were all correctly chosen but arranged in a scrambled, ungrammatical order.</p>
+
+<h2 class="module-h">Section 4 — Piṇḍībandhas: Group Formation as a Further Compositional Layer</h2>
+
+<p><span class="tier-textual tier-tag">Textual Analysis</span>Beyond the individual performer's own karaṇa and aṅgahāra sequences, the tradition documents a further, still higher compositional layer specific to group choreography: piṇḍībandhas, formations in which multiple performers combine their own individually executed karaṇa sequences into a larger, spatially coordinated group pattern. This third compositional tier completes a structure that maps with reasonable precision onto the phoneme–word–sentence hierarchy already familiar from this series' own earlier treatment of sphoṭa theory: the karaṇa functions as the minimal unit, the aṅgahāra as the intermediate combinatorial unit built from ordered karaṇa-sequences, and the piṇḍībandha as the largest unit, in which multiple performers' own aṅgahāra-level sequences combine into a spatially extended composition.</p>
+
+<h2 class="module-h">Section 5 — The Combinatorial Arithmetic, and Its Limits</h2>
+
+<p><span class="tier-textual tier-tag">Textual Analysis</span>A fixed set of 108 karaṇas, combined according to fixed rules into thirty-two named aṅgahāras, does not by itself generate anything resembling the productive, open-ended combinatorial capacity a spoken language's phonemic inventory generates. The Nāṭyaśāstra's own documented aṅgahāra count is itself closed and fixed at thirty-two, not open-ended, and the tradition does not document a further, unlimited productive grammar generating novel aṅgahāras from the 108 karaṇas at a choreographer's own discretion. The karaṇa system, as the classical sources document it, is a considerably more closed, finite combinatorial system at every one of its three tiers than a natural spoken language is at any of its own corresponding tiers. This limit, stated plainly here, is exactly what Section 9 below takes as its own formal starting point.</p>
+
+<h2 class="module-h">Section 6 — Rhythmic Cycle as the Fourth Governing Constraint</h2>
+
+<p><span class="tier-textual tier-tag">Textual Analysis</span>A further constraint governs how karaṇas and aṅgahāras are actually executed in time: the tāla, the rhythmic cycle already examined in this series' Part IX treatment of music's coordination with abhinaya. A karaṇa is not merely a fixed combinatorial unit in the abstract; it is executed against, and its own internal timing is governed by, a specific point within an ongoing rhythmic cycle. This gives the karaṇa system a further dimension of constraint beyond pure combinatorics: not merely which karaṇas may follow which within a given aṅgahāra, but at which specific rhythmic position within the tāla cycle each karaṇa's own execution must fall.</p>
+
+<h2 class="module-h">Section 7 — Aṅgahāra and Rasa: A Direct Bridge to Aesthetic Experience</h2>
+
+<p><span class="tier-textual tier-tag">Textual Analysis</span>Because the karaṇa system's own combinatorial units carry no independent narrative or referential meaning, the question of how a tāṇḍava composition built from aṅgahāras nonetheless produces genuine aesthetic experience connects directly to this series' own treatment of rasa. A pure nṛtta composition is documented in the broader classical tradition as capable of producing genuine aesthetic delight through its own combinatorial and rhythmic properties alone — a capacity closer to music's own non-referential aesthetic effect than to abhinaya's narrative and emotional effect, worked out spatially and temporally across a body moving through a fixed rhythmic cycle rather than worked out narratively across an unfolding plot.</p>
+
+<h2 class="module-h">Section 8 — Toward Part XI's Full Catalogue</h2>
+
+<p><span class="tier-textual tier-tag">Textual Analysis</span>This module established the combinatorial architecture — recaka, karaṇa, aṅgahāra, piṇḍībandha — within which Part XI's own catalogue of the 108 named karaṇas sits. Nothing in the original eight sections attempted to anticipate that granular catalogue; their purpose was to establish the architecture the catalogue itself presupposes. Sections 9 through 11 now push that architecture to a level of formal precision the original sections deliberately left implicit.</p>
+
+<h2 class="module-h">Section 9 — Formal Deepening: The Mathematics Beneath the Analogy</h2>
+
+<div class="note-box">
+<strong>A note on register.</strong> Sections 1 through 8 established the karaṇa system's combinatorial architecture through textual analysis and structural analogy to linguistics. This section restates that same architecture in the actual formal vocabulary — formal language theory, combinatorics, group theory, graph theory, information theory — those analogies were gesturing toward, without inventing specific textual data (exact sthāna, cārī, or nṛtta-hasta counts, or specific karaṇa-to-aṅgahāra assignments) this module does not have independently documented. Where a genuine number is required and not available from the classical catalogue itself, this section states the formal method in general form and marks the missing input explicitly, rather than inventing a plausible-sounding figure.</p>
+</div>
+
+<h3 class="sec-h">9.1 — Where the Karaṇa System Sits on the Chomsky Hierarchy</h3>
+
+<p><span class="tier-formal tier-tag">Formal Linguistics</span>Noam Chomsky's hierarchy classifies formal languages by the generative power required to produce them: regular languages, the weakest class, generated by finite-state automata with no memory of arbitrarily distant prior states; context-free languages, requiring a stack and capable of expressing nested, self-embedding structure; and more powerful classes above that, up to unrestricted (Turing-computable) grammars. Natural human languages are widely argued to require at least context-free, and by some analyses mildly context-sensitive, generative power, precisely because they exhibit unbounded recursive embedding — a sentence containing a clause containing a clause, in principle without limit.</p>
+
+<p><span class="tier-formal tier-tag">Formal Application</span>The karaṇa system, as Sections 1 through 8 document it, exhibits no comparable recursive embedding: an aṅgahāra is a fixed, finite, non-recursive sequence of karaṇas, and nothing in the classical source documents an aṅgahāra containing another aṅgahāra nested within it, or any generative rule permitting unbounded self-embedding. This places the karaṇa system, formally, at the regular end of the Chomsky hierarchy — closer to a finite-state automaton with thirty-two fixed accepting paths through a 108-symbol alphabet than to a context-free grammar, let alone a natural language's own generative power. This is a precise, formal restatement of what Section 5 already said in prose: the system's closure is not merely a quantitative limit (only 108 units, only 32 sequences) but a qualitative one (no recursive generative mechanism), and the two are logically distinct claims, both true of this system on the evidence available.</p>
+
+<h3 class="sec-h">9.2 — A Toy Formal Grammar, Stated Explicitly</h3>
+
+<p><span class="tier-formal tier-tag">Formal Illustration, Not Textual Claim</span>To make Section 9.1's classification concrete rather than asserted, a minimal formal grammar can be written for a system with the karaṇa architecture's own general shape. Let the terminal alphabet be the 108 karaṇas, notated here purely as illustrative placeholders K₁ through K₁₀₈, with no claim that this notation corresponds to any specific named karaṇa in the classical catalogue, which Part XI alone will supply. A regular grammar generating exactly the documented aṅgahāra structure would take the form of thirty-two fixed production rules, each rewriting a single non-terminal symbol directly into its own specific ordered string of terminals:</p>
+
+<pre>Aṅgahāra₁  →  K₄ K₁₇ K₄ K₆₂ K₉
+Aṅgahāra₂  →  K₁₁ K₁₁ K₃₃ K₈ K₈ K₂₀ K₅
+   ⋮
+Aṅgahāra₃₂ →  K₇₀ K₇₀ K₅ K₁₈ K₄₅ K₄₅ K₉₀</pre>
+
+<p><span class="tier-formal tier-tag">Formal Illustration, Not Textual Claim</span>Two structural features of this toy grammar are worth stating explicitly, since they are true of any grammar of this shape regardless of which real karaṇas eventually fill the placeholders. First, each rule is a single, direct rewrite with no recursive call back to Aṅgahāra on the right-hand side — confirming Section 9.1's regular-language classification formally rather than by inspection alone. Second, the grammar permits repetition of a terminal symbol within a single rule (a karaṇa recurring within one aṅgahāra, as the illustrative Aṅgahāra₂ and Aṅgahāra₃₂ above show), which is a substantive, testable claim about the real system: whether the actual thirty-two aṅgahāras the Nāṭyaśāstra documents do or do not permit a karaṇa to recur within a single sequence is a question Part XI's own catalogue will answer directly, and this section flags it as worth checking specifically once that catalogue is in hand, since the answer affects which formal language-theoretic tools apply most precisely.</p>
+
+<h3 class="sec-h">9.3 — The Counting Problem: Possible Combinations Versus Realised Karaṇas</h3>
+
+<p><span class="tier-formal tier-tag">Formal Method, Inputs Not Yet Available</span>If the number of documented sthānas is <span class="formal">s</span>, the number of documented cārīs is <span class="formal">c</span>, and the number of documented nṛtta-hastas is <span class="formal">n</span> — figures this module does not restate here because they belong to this series' own earlier, dedicated treatment of āṅgika abhinaya's component vocabularies rather than to Module II's own scope — then the space of formally possible sthāna-cārī-nṛtta-hasta combinations, before any consideration of which are aesthetically or texually sanctioned, is the simple product <span class="formal">s × c × n</span>. The Nāṭyaśāstra realises exactly 108 of these possible combinations as named, legitimate karaṇas. The ratio <span class="formal">108 ⁄ (s×c×n)</span> is a directly computable measure of how selective the tradition's own inventory is relative to the full combinatorial space its own component vocabulary could in principle generate, and is a specific, numerical question Part XI's catalogue, cross-referenced against this series' own component counts, could answer precisely — a concrete piece of unfinished formal business this module leaves openly on the table rather than filling with an invented number.</p>
+
+<h3 class="sec-h">9.4 — Group Theory: Do the Recakas Generate a Symmetry Structure?</h3>
+
+<p><span class="tier-formal tier-tag">Formal Question, Genuinely Open</span>Section 1's four recakas — hasta, pāda, kaṭi, grīva — function, in the vocabulary of abstract algebra, as candidate generators of some underlying structure on the karaṇa set, in the same way a small set of generating symmetries (rotations, reflections) generates the full symmetry group of a geometric figure. Whether the recaka set, combined with whatever composition rule governs their interaction within a karaṇa, forms a genuine mathematical group — closed under composition, possessing an identity and inverses — or merely a looser combinatorial vocabulary without full group structure, is a question this module states formally but does not resolve, since resolving it requires exactly the kind of complete, symbol-level encoding of all 108 karaṇas that only Part XI's catalogue can supply. If group structure were found, standard classification results for small finite groups (cyclic, dihedral, and their products) would immediately supply testable predictions about what further karaṇas the recaka system could in principle generate beyond the 108 actually documented — a genuinely interesting formal question this section poses rather than answers.</p>
+
+<h3 class="sec-h">9.5 — Graph Theory: Aṅgahāras as Walks, Piṇḍībandhas as Products</h3>
+
+<p><span class="tier-formal tier-tag">Formal Restatement</span>A further natural formalisation treats the 108 karaṇas as nodes of a directed graph, with an edge drawn from karaṇa <span class="formal">Kᵢ</span> to karaṇa <span class="formal">Kⱼ</span> whenever the documented aṅgahāra catalogue contains at least one instance of <span class="formal">Kⱼ</span> immediately following <span class="formal">Kᵢ</span>. On this formalisation, each of the thirty-two aṅgahāras is simply a specific directed walk through this graph, and the graph's own structure — which nodes have high out-degree (karaṇas that transition to many different possible successors across the corpus of thirty-two sequences) versus low out-degree (karaṇas that only ever transition to one specific successor) — becomes directly computable once the full catalogue is encoded, and would supply a precise, graph-theoretic account of exactly which transitions the tradition treats as flexible points of compositional choice versus fixed, obligatory sequence, a distinction Section 3's prose account of "sequence-order carries real weight" asserts in general but does not, on its own, quantify node by node. Piṇḍībandha formations extend this further into a graph product across performers: a k-performer piṇḍībandha is formalisable as a walk on the k-fold Cartesian product of the karaṇa transition graph with itself, subject to the further spatial-formation constraints Module I, Section 8's account of group choreography describes in prose.</p>
+
+<h3 class="sec-h">9.6 — Information-Theoretic Entropy of the Closed System</h3>
+
+<p><span class="tier-formal tier-tag">Formal Method, Result Pending a Corpus</span>Claude Shannon's information entropy, applied to a symbol sequence, measures the average information content, in bits, carried by each symbol given the statistical structure of the sequences it appears in — high entropy where a symbol's identity is hard to predict from context, low entropy where context strongly constrains which symbol comes next. Applied to the karaṇa system once Part XI's catalogue supplies the full thirty-two aṅgahāra sequences as data, a direct Shannon entropy calculation over karaṇa transitions would supply a precise, numerical answer to a question this series' earlier prose can only gesture at qualitatively: how much redundancy, in the formal information-theoretic sense, the aṅgahāra system carries — and would permit a direct, quantitative comparison against published entropy measures for phoneme transition in natural language phonotactics, a comparison that would either support or complicate the phoneme analogy this whole Part has built its central claim on, depending on where the resulting number falls. This module states the method precisely and leaves the number for whoever encodes the corpus first.</p>
+
+<h3 class="sec-h">9.7 — A Peircean Alternative to the Saussurean Frame</h3>
+
+<p><span class="tier-formal tier-tag">Semiotic Theory</span>Module I's phoneme analogy draws implicitly on a broadly Saussurean, structuralist semiotics, in which a sign's meaning arises from its differential position within a closed system of oppositions rather than from any intrinsic resemblance or causal connection to what it signifies. Charles Sanders Peirce's alternative, triadic semiotics offers a genuinely different formal lens, distinguishing an icon, which signifies by resemblance; an index, which signifies by an actual causal or existential connection to its object; and a symbol, which signifies by pure convention, in Saussure's own sense. Read through Peirce's categories rather than Saussure's, a karaṇa is arguably closer to an index than to a Saussurean symbol: its sthāna, cārī, and nṛtta-hasta components are not arbitrary conventional labels but are, in an important sense, actual instances of the body positions and movements they name, existentially connected to what they signify rather than merely conventionally paired with it — a different, not necessarily incompatible, formal characterisation from the phoneme analogy, and one this module offers as a genuine alternative rather than folding it into the Saussurean frame as though the two were equivalent.</p>
+
+<h2 class="module-h">Section 10 — Open Frontier Questions for Mathematicians, Linguists, and Computer Scientists</h2>
+
+<div class="note-box">
+<strong>Same discipline as this series' psychological register.</strong> Each question below is stated precisely enough to be run as an actual research or engineering project, with a real, cited method, and this module takes no position on what the outcome would be.
+</div>
+
+<h3 class="sec-h">10.1 — Formal Verification of the Regular-Grammar Hypothesis</h3>
+
+<p><span class="tier-frontier tier-tag">Open Research Question</span>Section 9.1 classified the karaṇa system as regular rather than context-free based on the absence of documented recursive embedding in the sources examined so far. A computational linguist could test this claim directly and rigorously by encoding the Nāṭyaśāstra's full fourth-chapter catalogue, once available in Part XI, as a formal grammar and checking computationally whether any construction in the source text requires context-free or more powerful generative machinery to describe correctly — a fully well-defined, currently unperformed piece of formal verification.</p>
+
+<h3 class="sec-h">10.2 — Automated Aṅgahāra Generation and Validation Software</h3>
+
+<p><span class="tier-frontier tier-tag">Open Research Question</span>Section 9.2's toy grammar could be built out, once real data is available, into working software: a system that encodes all 108 karaṇas and thirty-two aṅgahāras as formal objects, validates a proposed performer sequence against the documented grammar in real time, and flags exactly where and how a performance deviates from a legitimate aṅgahāra — a direct pedagogical and archival tool, and a natural extension of the motion-capture pose-estimation research this series' psychological register (Module V, Section 8.5) has already discussed as an emerging field.</p>
+
+<h3 class="sec-h">10.3 — Entropy Comparison Against Natural-Language Phonotactics</h3>
+
+<p><span class="tier-frontier tier-tag">Open Research Question</span>Section 9.6 specified the entropy calculation but not its result. Once computed, the resulting bits-per-karaṇa figure could be directly compared against published phoneme-transition entropy figures for several natural languages, testing a specific, falsifiable prediction the phoneme analogy implies: that the karaṇa system's own transition entropy should fall within a range broadly comparable to natural phonotactic systems, rather than being either far more predictable (suggesting a looser, less information-rich analogy than claimed) or far less predictable (suggesting the system carries more unconstrained variation than the "closed, rule-governed" characterisation of Sections 3 and 5 implies).</p>
+
+<h3 class="sec-h">10.4 — Graph-Theoretic Network Analysis of Piṇḍībandha Formations</h3>
+
+<p><span class="tier-frontier tier-tag">Open Research Question</span>Section 9.5's graph-product formalisation of piṇḍībandha coordination is directly testable against real ensemble performance data gathered via multi-performer motion capture: do documented lotus, chain, and other named formations correspond to identifiable, distinct network topologies on the performer-product graph, and does formation complexity, measured graph-theoretically, correlate with the documented difficulty ranking classical sources assign to different piṇḍībandhas — a concrete, quantifiable research question for a network scientist collaborating with a dance ethnographer.</p>
+
+<h3 class="sec-h">10.5 — Testing for Group-Theoretic Symmetry in the 108-Set</h3>
+
+<p><span class="tier-frontier tier-tag">Open Research Question</span>Section 9.4 posed, without resolving, whether the recaka system generates a genuine mathematical group over the karaṇa set. Once Part XI's full catalogue is encoded symbolically, standard computational group theory tools (such as those implemented in the GAP or SageMath computer algebra systems) could test this directly, checking closure, identity, and invertibility properties against the documented recaka-karaṇa relationships and reporting whether any standard finite group structure (cyclic, dihedral, or another classified type) fits the data — a fully mechanical, currently unperformed calculation.</p>
+
+<h3 class="sec-h">10.6 — Comparative Formal-Grammar Analysis Against Other Closed Notation Systems</h3>
+
+<p><span class="tier-frontier tier-tag">Open Research Question</span>The karaṇa system is not the only codified, closed movement-notation system in existence; Rudolf Laban's Labanotation and Rudolf Benesh's Benesh Movement Notation are both twentieth-century Western systems documented in dance-scholarship literature as possessing their own formal combinatorial structure. A comparative formal-grammar analysis — applying Section 9.1's Chomsky-hierarchy classification method to Labanotation and Benesh notation as well, and comparing the resulting classifications and entropy measures against the karaṇa system's own — would supply genuinely novel comparative evidence about whether closed movement-notation systems in general cluster around the regular-language end of the hierarchy, or whether the karaṇa system's own closure is unusually strict even by that broader comparison class.</p>
+
+<h3 class="sec-h">10.7 — Machine-Learning Classification and the Recaka Hypothesis</h3>
+
+<p><span class="tier-frontier tier-tag">Open Research Question</span>A machine-learning classifier trained on motion-capture data to recognise which of the 108 karaṇas a given movement sequence represents would, as a side effect of its own internal feature representations, reveal which karaṇas the model finds easily confusable with one another. If Section 1's recaka theory is structurally correct, this module predicts — as a testable, falsifiable hypothesis rather than an assumed result — that a classifier's own confusion matrix should cluster karaṇas sharing a recaka more tightly than karaṇas that do not, providing an independent, purely data-driven test of whether the recaka is a genuine distinctive feature in Section 1's own linguistic sense, or merely a convenient descriptive category without measurable classificatory consequence.</p>
+
+<h2 class="module-h">Section 11 — The Ceiling Question, Stated Formally: How Much Generative Power Does This System Actually Have?</h2>
+
+<div class="note-box">
+<strong>Why this ceiling question is answered more confidently than Module V's.</strong> Module V's psychological register had to leave its own "highest reach" question substantially open, because it concerned unmeasured facts about trained brains. This module's ceiling question is different in kind: it concerns the system's own documented formal structure, which Sections 1 through 9 have already largely specified. Where the data is genuinely missing (Section 9.3's exact combinatorial ratio, Section 9.6's exact entropy value), this section says so plainly rather than estimating. Where the classification is a matter of documented structure rather than measurement, this section states it with the confidence formal argument, rather than empirical uncertainty, actually supports.</p>
+</div>
+
+<h3 class="sec-h">11.1 — The Honest Formal Answer: Bounded, and Precisely So</h3>
+
+<p><span class="tier-formal tier-tag">Formal Conclusion</span>Section 9.1's classification gives a direct answer to what "highest level" could mean for this system formally: as documented, the karaṇa-aṅgahāra-piṇḍībandha hierarchy exhibits regular, not context-free, generative power, and is very far from Turing-complete — it cannot, on the evidence available, generate an unbounded variety of structurally novel compositions the way a natural language's recursive grammar can generate an effectively unlimited number of novel sentences. This is not a deficiency requiring apology, any more than it is a deficiency that a phoneme inventory alone, without the further combinatorial machinery a full grammar supplies, cannot generate novel sentences either. It is a precise, honest formal description of what kind of system the tradition actually built: a closed, finite, exhaustively specifiable one, by evident design (Module I, Section 4's own discussion of the 108 count's deliberate, ritually-weighted closure) rather than by any failure to develop further.</p>
+
+<h3 class="sec-h">11.2 — What Would Be Required for Higher Generative Power, and Why It Is Absent</h3>
+
+<p><span class="tier-formal tier-tag">Formal Conclusion</span>Moving the karaṇa system up the Chomsky hierarchy would require a specific, identifiable formal ingredient the documented sources do not supply: a recursive rule permitting an aṅgahāra, or some larger unit, to contain another instance of the same category of unit nested within it, the way a relative clause can contain another relative clause in natural language syntax. No source examined across this series documents any such embedding rule for aṅgahāras or piṇḍībandhas. This module states plainly that its absence could reflect either of two possibilities it cannot currently distinguish between: a genuine, deliberate formal ceiling built into the tradition's own design, consistent with the closed, ritually-weighted 108 and thirty-two counts (Module I, Section 4); or simply an aspect of the system this series' own sources, read so far, have not yet documented, which only Part XI's full catalogue, and any further textual layers beyond it, could settle definitively.</p>
+
+<h3 class="sec-h">11.3 — Why a Regular, Bounded System Is Not a Lesser Achievement</h3>
+
+<p><span class="tier-synthetic tier-tag">Closing Position</span>A regular, non-recursive, exhaustively specifiable system has a genuine formal virtue a context-free or unrestricted system does not automatically have: full decidability. Every well-formedness question about the karaṇa system — is this a legitimate karaṇa, is this a legitimate aṅgahāra, does this sequence match the documented catalogue — is, on a regular-language classification, guaranteed mechanically decidable in principle, computable by a finite-state process with no risk of undecidability or infinite regress, a property natural language's own greater generative power actually sacrifices, since context-free and more powerful grammars can in principle generate well-formedness questions no finite procedure is guaranteed to resolve. The karaṇa system's own formal ceiling, stated in Section 11.1, is therefore better read not as a limitation the tradition fell short of but as a specific, deliberate formal choice — precision and total mechanical verifiability, bought at the direct cost of the recursive, unbounded generativity a spoken language enjoys — and the honest formal verdict this module reaches is that this trade is exactly legible in the system's own textual closure, not a shortfall this analysis needs to explain away.</p>
+
+<div class="synth-close">
+<h3 class="sec-h" style="margin-top:0;">Closing Synthesis of Module II, Extended</h3>
+<p>The original eight sections established, through textual analysis and structural analogy, that the karaṇa system possesses genuine, non-arbitrary combinatorial architecture across three tiers. Sections 9 through 11 have now restated that same architecture in the actual formal languages capable of testing it precisely: Chomsky-hierarchy classification placing the system at the regular, non-recursive end of generative power (9.1–9.2); combinatorics quantifying, in principle, exactly how selective the 108-unit inventory is relative to its own generating vocabulary (9.3); group theory and graph theory offering testable structural hypotheses about the recaka system and about piṇḍībandha coordination (9.4–9.5); information theory offering a precise, computable measure of the system's own redundancy once a corpus exists (9.6); and Peircean semiotics offering a genuine theoretical alternative to the Saussurean frame this Part has otherwise used (9.7). Section 10 turned seven of these formal openings into concrete, runnable research questions for mathematicians, computational linguists, and network scientists. Section 11 closed by stating, with the confidence formal argument supports rather than empirical caution requires, exactly how much generative power this system has and does not have — a bounded, decidable, regular system by design, not by shortfall. Module III now examines what this same formally bounded architecture requires of the trained nervous system that must actually execute it.</p>
+</div>
+
+<h2 class="module-h">Reference Apparatus — Module II, Sections 9–11</h2>
+<ol class="ref-list">
+<li>Chomsky, N. (1956). Three models for the description of language. <em>IRE Transactions on Information Theory</em>, 2(3).</li>
+<li>Hopcroft, J. E., Motwani, R., &amp; Ullman, J. D. (2006). <em>Introduction to Automata Theory, Languages, and Computation</em> (3rd ed.). Addison-Wesley.</li>
+<li>Shannon, C. E. (1948). A mathematical theory of communication. <em>Bell System Technical Journal</em>, 27(3).</li>
+<li>Rotman, J. J. (1995). <em>An Introduction to the Theory of Groups</em> (4th ed.). Springer.</li>
+<li>West, D. B. (2001). <em>Introduction to Graph Theory</em> (2nd ed.). Prentice Hall.</li>
+<li>Peirce, C. S. (1932). <em>Collected Papers of Charles Sanders Peirce, Vol. II: Elements of Logic</em>. Harvard University Press.</li>
+<li>Saussure, F. de (1916/1959). <em>Course in General Linguistics</em> (W. Baskin, Trans.). Philosophical Library.</li>
+<li>Guest, A. H. (2005). <em>Labanotation: The System of Analyzing and Recording Movement</em> (4th ed.). Routledge.</li>
+<li>Benesh, R., &amp; Benesh, J. (1977). <em>Reading Dance: The Birth of Choreology</em>. Souvenir Press.</li>
+<li>The GAP Group (2023). <em>GAP — Groups, Algorithms, and Programming</em>, Version 4. www.gap-system.org.</li>
+</ol>
+
+<footer class="nav-footer">
+  <span>← Module I: The Karaṇa Defined</span>
+  <span>Module III: The Body's Grammar →</span>
+</footer>
+</div>
 </body>
 </html>
