@@ -2953,7 +2953,401 @@ has simply catalogued and set aside.
 </footer>
 
 </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module Three — The Critical Catalogue of the 108 Karaṇas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-void:#0e0605; --bg-panel:#160a08; --bg-panel-2:#1c0d0a;
+    --crimson:#7a1f1f; --crimson-bright:#a12c2c;
+    --gold:#c9a24b; --gold-soft:#e2c67f; --gold-dim:#8a6f3a;
+    --ivory:#ece2d0; --ivory-dim:#bfb29a; --rule:#3a1f18; --shadow:rgba(0,0,0,0.55);
+  }
+  *{box-sizing:border-box;}
+  body{background:radial-gradient(ellipse at top, #1a0d0a 0%, var(--bg-void) 60%);color:var(--ivory);font-family:'Spectral',serif;line-height:1.75;margin:0;padding:0;}
+  .wrap{max-width:880px;margin:0 auto;padding:64px 28px 120px;}
+  header.title-block{text-align:center;margin-bottom:56px;border-bottom:1px solid var(--rule);padding-bottom:40px;}
+  .kicker{font-family:'Cinzel',serif;letter-spacing:0.18em;color:var(--gold-dim);font-size:0.78rem;text-transform:uppercase;margin-bottom:14px;}
+  h1{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:2.0rem;font-weight:600;margin:0 0 12px;line-height:1.3;}
+  .subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ivory-dim);font-size:1.12rem;}
+  .deva{font-family:'Noto Serif Devanagari',serif;}
+  nav.crumb{font-family:'EB Garamond',serif;font-size:0.9rem;color:var(--gold-dim);text-align:center;margin-top:16px;}
+  section.module-intro{background:var(--bg-panel);border:1px solid var(--rule);border-left:3px solid var(--crimson-bright);padding:26px 30px;margin-bottom:44px;border-radius:2px;}
+  h2.module-h{font-family:'Cinzel',serif;color:var(--gold);font-size:1.45rem;border-bottom:1px solid var(--rule);padding-bottom:10px;margin-top:56px;margin-bottom:22px;}
+  h3.sec-h{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:1.12rem;margin-top:34px;margin-bottom:12px;letter-spacing:0.01em;}
+  p{margin:0 0 18px;font-size:1.02rem;color:var(--ivory);text-align:justify;}
+  .note-box{background:var(--bg-panel-2);border:1px solid var(--rule);border-left:3px solid var(--gold-dim);padding:18px 22px;margin:22px 0;font-family:'EB Garamond',serif;font-size:0.95rem;color:var(--ivory-dim);}
+  .note-box strong{color:var(--gold-soft);font-family:'Spectral',serif;}
+  .tier-tag{display:inline-block;font-family:'Cinzel',serif;font-size:0.66rem;letter-spacing:0.1em;text-transform:uppercase;padding:3px 9px;border-radius:2px;margin-right:8px;margin-bottom:4px;}
+  .tier-textual{background:rgba(122,31,31,0.35);color:#e0a9a9;border:1px solid var(--crimson);}
+  .tier-empirical{background:rgba(201,162,75,0.18);color:var(--gold-soft);border:1px solid var(--gold-dim);}
+  .tier-synthetic{background:rgba(120,120,120,0.18);color:var(--ivory-dim);border:1px solid #5a5248;}
+  .tier-frontier{background:rgba(90,140,150,0.16);color:#9fd2d8;border:1px solid #4a7a82;}
+  .tier-contested{background:rgba(150,90,40,0.2);color:#e0b98a;border:1px solid #8a5a2a;}
+  .grade{display:inline-block;font-family:'Cinzel',serif;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:50%;margin-right:6px;}
+  .grade-A{background:rgba(80,150,90,0.25);color:#a8e0b0;border:1px solid #4a8a52;}
+  .grade-B{background:rgba(201,162,75,0.22);color:var(--gold-soft);border:1px solid var(--gold-dim);}
+  .grade-C{background:rgba(150,90,40,0.22);color:#e0b98a;border:1px solid #8a5a2a;}
+  .grade-D{background:rgba(122,31,31,0.3);color:#e0a9a9;border:1px solid var(--crimson);}
+  blockquote{border-left:2px solid var(--gold-dim);margin:22px 0;padding:6px 0 6px 22px;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ivory-dim);font-size:1.05rem;}
+  table{width:100%;border-collapse:collapse;margin:22px 0;font-family:'EB Garamond',serif;font-size:0.9rem;}
+  table th{background:var(--bg-panel-2);color:var(--gold-soft);text-align:left;padding:9px 11px;border-bottom:2px solid var(--gold-dim);font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.03em;text-transform:uppercase;}
+  table td{padding:9px 11px;border-bottom:1px solid var(--rule);color:var(--ivory-dim);vertical-align:top;}
+  ol.ref-list{font-family:'EB Garamond',serif;font-size:0.9rem;color:var(--ivory-dim);padding-left:22px;}
+  ol.ref-list li{margin-bottom:8px;}
+  .synth-close{background:linear-gradient(180deg, var(--bg-panel) 0%, var(--bg-void) 100%);border:1px solid var(--gold-dim);border-radius:3px;padding:28px 30px;margin-top:48px;}
+  .synth-close h3{margin-top:0;}
+  footer.nav-footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;font-family:'Cinzel',serif;font-size:0.82rem;color:var(--gold-dim);}
+  .karana-name{color:var(--gold-soft);font-weight:600;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="title-block">
+  <div class="kicker">Śāstrex Vāk · Karaṇa Series · Module Three</div>
+  <h1>The Critical Catalogue of the 108 Karaṇas<br><span class="deva" style="font-size:1.25rem;color:var(--gold-dim);">कारण-समीक्षा-सूची</span></h1>
+  <div class="subtitle">Methodology, Confidence Grading, and Reconciled Entries Across the Textual, Commentarial, and Sculptural Record</div>
+  <nav class="crumb">Module One: The Karaṇa Defined · Module Two: The Epigraphic and Art-Historical Register · <strong>Module Three: The Critical Catalogue</strong></nav>
+</header>
+
+<section class="module-intro">
+  <p style="margin:0;">
+Module Two closed by pointing toward this module directly: a complete, cross-referenced,
+citation-grade table of all 108 karaṇas, reconciling the Nāṭyaśāstra's own base text against
+Abhinavagupta's commentarial gloss, against sculptural attestation at Chidambaram and
+comparable sites, and against the independent witness of the <em>Abhinaya Darpaṇa</em> and
+<em>Saṅgīta Ratnākara</em>. This module attempts that project honestly rather than
+performing it. A critical catalogue is not a restatement of a list; it is a discipline —
+one that states, entry by entry, exactly how strong the evidence for a given identification
+actually is, and that refuses to smooth documented manuscript variation into a false
+appearance of settled consensus. Sections 1 through 3 set out that discipline directly.
+Sections 4 through 6 apply it: first to the handful of karaṇas this module can document with
+real confidence and real depth, then to the naming system's own internal grammar, which
+yields genuine scholarly content without requiring certainty this module does not possess
+about every unit's precise numbered position. Section 7 states plainly what remains to be
+done, and by whom, before a complete 108-entry table can honestly carry this module's own
+highest confidence grade throughout.
+</p>
+</section>
+
+<h2 class="module-h">Section 1 — Why a Critical Catalogue Differs From a Descriptive List</h2>
+
+<p><span class="tier-synthetic tier-tag">Methodological Foundation</span>A descriptive
+list states what a source says. A critical catalogue, in the sense textual criticism has
+used the term for Sanskrit śāstric literature generally, states what a source says,
+identifies every other source that bears on the same claim, records where those sources
+agree and where they diverge, and assigns the resulting claim a confidence level that
+reflects the actual weight of that combined evidence — rather than presenting a single
+printed edition's own reading as though it were the unique, uncontested textual fact. This
+distinction is not a pedantic scholarly nicety; it is the entire difference between a
+popular tabulation of "the 108 karaṇas," of the kind that circulates widely in
+practitioner handbooks and online reference material, often reproducing a single earlier
+source's own choices without flagging where that source itself made an editorial judgment
+among competing manuscript readings, and a genuine critical catalogue capable of supporting
+the kind of cross-referenced, source-attributed claims Module Two's own epigraphic method
+requires when a specific sculptural panel is compared against a specific textual
+description.</p>
+
+<p><span class="tier-textual tier-tag">Established Textual-Critical Practice</span>The
+Nāṭyaśāstra's own manuscript tradition is large, geographically dispersed, and documented
+by its own editors — most notably in the introductory apparatus to the major printed
+critical editions, including the Gaekwad Oriental Series edition prepared under M.
+Ramakrishna Kavi and the translation and critical notes produced by Manomohan Ghosh — as
+containing genuine textual variation across regional recensions, affecting not only
+individual word choices within a given verse but, in a smaller number of documented cases,
+the sequence, and even in rarer cases the presence or absence, of specific items within
+enumerated lists such as the karaṇa catalogue. A critical catalogue's own first
+responsibility is to make this variation visible rather than resolving it silently by
+following whichever single edition happens to be most conveniently at hand.</p>
+
+<h2 class="module-h">Section 2 — The Four-Source Cross-Reference Method</h2>
+
+<p><span class="tier-synthetic tier-tag">Methodology</span>This module applies, and asks
+any future contributor to this catalogue to apply, the same four-source method Module Two
+established in general terms and this module now operationalises at the level of the
+individual entry. For any given karaṇa, four questions are asked in sequence, and the
+answer to each is recorded separately rather than merged into a single undifferentiated
+description.</p>
+
+<table>
+<tr><th>Source</th><th>Question Asked</th><th>What a Positive Answer Establishes</th></tr>
+<tr><td>Nāṭyaśāstra base text</td><td>Does the verse survive, in what wording, and in how many independent recensions?</td><td>The unit's own textual existence and its documented verse-level description</td></tr>
+<tr><td>Abhinavabhāratī</td><td>Does Abhinavagupta gloss this specific verse, and does his gloss clarify or complicate the base text's own compressed wording?</td><td>An early, authoritative interpretive layer resolving the sūtra-style compression Module Two, Section 9 described</td></tr>
+<tr><td>Sculptural attestation</td><td>Is there a labelled panel, at Chidambaram or elsewhere, identifiable with this specific unit by name?</td><td>Independent, physical, datable confirmation that the unit was recognised and rendered by a performing tradition, not only preserved in manuscript</td></tr>
+<tr><td>Comparative treatise</td><td>Does the <em>Abhinaya Darpaṇa</em> or <em>Saṅgīta Ratnākara</em> reference a comparable or identically named unit?</td><td>Evidence of the unit's own continued recognition across later centuries and later regional schools</td></tr>
+</table>
+
+<p><span class="tier-synthetic tier-tag">Structural Application</span>An entry answered
+affirmatively across all four sources is evidentially in a wholly different category from
+an entry attested in the base text alone, and Section 3's grading system exists precisely
+to keep that difference visible in the finished catalogue rather than letting every entry
+appear, by virtue of sharing a table row with the others, equally well established.</p>
+
+<h2 class="module-h">Section 3 — A Confidence-Grading System for Catalogue Entries</h2>
+
+<p><span class="tier-synthetic tier-tag">Methodology</span>Every entry in this catalogue,
+present and future, carries one of four grades, assigned according to how many of Section
+2's four sources independently confirm it and how directly they converge.</p>
+
+<table>
+<tr><th>Grade</th><th>Criterion</th><th>What It Licenses a Scholar to Claim</th></tr>
+<tr><td><span class="grade grade-A">A</span>Multiply Attested</td><td>Confirmed across three or four of Section 2's sources, with no significant cross-source disagreement on name, position, or core description</td><td>The unit's identity, name, and general component description can be stated as established fact</td></tr>
+<tr><td><span class="grade grade-B">B</span>Textually Secure, Independently Unconfirmed</td><td>Securely attested in the Nāṭyaśāstra base text and, where relevant, its commentary, but not yet independently confirmed by sculpture or comparative treatise</td><td>The unit's textual existence and description can be stated as fact; claims about its sculptural rendering or later reception require separate, explicit sourcing</td></tr>
+<tr><td><span class="grade grade-C">C</span>Contested or Recension-Variable</td><td>Attested, but with documented variation in name, position, or description across manuscript recensions or printed editions</td><td>The unit exists; its precise name, number, or description must be stated with reference to a specific edition rather than as a single uncontested fact</td></tr>
+<tr><td><span class="grade grade-D">D</span>Popularly Circulated, Not Independently Verified by This Catalogue</td><td>Appears in secondary or practitioner literature but has not been traced by this catalogue to a specific, citable primary-source verse or panel</td><td>Nothing beyond the bare claim that the name circulates in secondary literature; not to be treated as established without further primary-source verification</td></tr>
+</table>
+
+<p><span class="tier-synthetic tier-tag">Structural Application</span>This module states
+directly that the overwhelming majority of the 108-item catalogue, as this module has been
+able to research it, currently sits at Grade B or below, not because the underlying
+tradition is poorly documented in any absolute sense, but because the specific,
+four-source, cross-referenced verification this grading system demands has not, to this
+module's knowledge, been completed and published for the full catalogue by any single
+existing source. Sections 4 through 6 work within this constraint honestly rather than
+inflating grades to produce an artificially complete-looking table.</p>
+
+<h2 class="module-h">Section 4 — Grade A: The Most Robustly Attested Entry</h2>
+
+<h3 class="sec-h">4.1 — Talapuṣpapuṭa: The Catalogue's Opening Unit</h3>
+
+<p><span class="tier-empirical tier-tag grade grade-A">Grade A</span>The karaṇa named
+Talapuṣpapuṭa is documented with unusual consistency, across the printed editions,
+translations, and secondary scholarship this catalogue has been able to consult, as
+occupying the opening position of the Nāṭyaśāstra's own fourth-chapter list. Its name is
+itself transparently descriptive, a compound built from tala (palm of the hand), puṣpa
+(flower), and puṭa (a cupped receptacle or fold), and is consistently glossed across
+secondary literature as describing a hand configuration in which the palms are held
+together in a cupped, vessel-like shape, as though holding or receiving flowers — an
+image directly continuous with the broader devotional and ritual vocabulary of offering
+(the añjali-adjacent gesture family) that appears throughout Sanskrit religious and
+performance literature. As an opening unit, its comparatively simple, grounded, devotionally
+resonant character is widely treated in secondary scholarship as an appropriate threshold
+gesture for a catalogue that will go on, across its own remaining 107 units, to develop
+considerably more physically demanding vocabulary.</p>
+
+<p><span class="tier-synthetic tier-tag">Structural Application</span>This module grades
+Talapuṣpapuṭa's own opening-position identity as Grade A specifically because of the
+convergence Section 3 requires: its position and name are stable across the base text
+tradition, its etymology is transparent and consistently glossed rather than contested, and
+its opening-catalogue placement is treated consistently, not as a matter of live scholarly
+dispute, across the secondary sources this module has reviewed. What this module does not
+extend Grade A confidence to, and states directly as a further open question rather than
+resolving by assumption, is a precise, independently confirmed identification of this
+specific unit on a specific, labelled Chidambaram panel; Module Two's own Section 1.4 already
+flagged that the full panel-by-panel legibility of the Chidambaram programme, especially at
+its own sequence's opening or closing points, is not uniformly confirmed across the site's
+own weathering and restoration history.</p>
+
+<h2 class="module-h">Section 5 — Reading the System Through Its Own Naming Morphology</h2>
+
+<div class="note-box">
+<strong>Why this section exists.</strong> Where this catalogue cannot yet responsibly assign
+Grade A status to a full numbered sequence of 108 individual entries, it can do something
+genuinely useful in the meantime: read the naming system itself. Sanskrit karaṇa names are,
+overwhelmingly, transparent descriptive compounds, not arbitrary labels, and the recurring
+suffixes and compound elements across the catalogue's own attested vocabulary form a
+structured system in their own right — one that yields real scholarly content independent
+of settling every unit's precise numbered position first.
+</div>
+
+<h3 class="sec-h">5.1 — The <em>-recita</em> / <em>-recaka</em> Family: Rotational Quality</h3>
+
+<p><span class="tier-textual tier-tag">Textual-Morphological Analysis</span>A recurring
+compound element across the karaṇa vocabulary, consistent with this series' own earlier
+combinatorial register's treatment of the recaka as a distinct sub-karaṇa component
+(Module Two, Section 1, in the companion Part X material), is the root <em>√ric</em>,
+appearing in forms such as <em>-recita</em> ("caused to rotate," "made to circle") and
+compounded with body-part terms to name a karaṇa whose defining character is a rotational
+movement in a specific limb or region — precisely the recaka vocabulary the wider series has
+already documented as a sub-karaṇa distinctive feature. A name built on this root is,
+independent of any dispute about its precise numbered catalogue position, reliably
+informative about the unit's own kinetic character: whatever else is uncertain about it,
+a karaṇa so named involves circular or rotational movement quality as a defining, named
+feature.</p>
+
+<h3 class="sec-h">5.2 — The <em>-kuṭṭita</em> / <em>-viddha</em> Family: Percussive and Piercing Quality</h3>
+
+<p><span class="tier-textual tier-tag">Textual-Morphological Analysis</span>A second
+recurring family draws on roots meaning "struck," "beaten," or "pierced" — <em>kuṭṭ-</em>
+("to strike, pound") and <em>vyadh-</em> (yielding <em>-viddha</em>, "pierced, struck
+through") — compounded with a body-part or object term to name karaṇas whose defining
+character is a sharp, percussive, or striking quality of movement, in contrast to the
+smoother rotational quality Section 5.1's family names. This distinction is directly useful
+independent of settling any single unit's numbered position: a scholar encountering an
+unfamiliar karaṇa name built on this family can state with reasonable confidence, from the
+name's own morphology alone, that a percussive rather than a rotational or gliding quality
+is intended, a useful constraint when comparing the name against an ambiguous or partially
+eroded sculptural rendering (Module Two, Section 2.4).</p>
+
+<h3 class="sec-h">5.3 — Zoomorphic Compounds: Animal-Referential Naming</h3>
+
+<p><span class="tier-textual tier-tag">Textual-Morphological Analysis</span>A further,
+well-attested and frequently discussed family of karaṇa names draws directly on animal
+reference — compounds built on terms such as vṛścika (scorpion), bhujaṅga (serpent/cobra),
+and vṛṣabha (bull) — naming a karaṇa whose posture or movement quality was understood by
+the tradition's own naming convention to resemble, or evoke, the referenced creature's own
+characteristic bodily attitude: a scorpion's curled, striking tail-carriage; a serpent's
+undulating, hood-raised posture; a bull's grounded, charging stance. This zoomorphic naming
+convention is not unique to the karaṇa system — it recurs across Indian classical dance and
+yoga āsana nomenclature alike, a broader pattern this module notes without claiming any
+specific historical dependency in either direction — but its presence within the karaṇa
+catalogue specifically is well documented and offers a further, independently useful
+interpretive constraint: a zoomorphically named karaṇa's own defining sthāna is expected, on
+the naming convention's own logic, to be visually and posturally evocative of its named
+referent in a way a sculptor rendering that unit would have had strong independent
+motivation to make visually legible, since the name-to-image connection is precisely the
+kind of mnemonic and didactic device such naming conventions are generally understood to
+serve.</p>
+
+<h3 class="sec-h">5.4 — Quantitative and Directional Compounds</h3>
+
+<p><span class="tier-textual tier-tag">Textual-Morphological Analysis</span>A final
+recurring naming family draws on directional and quantitative terms — ūrdhva (upward,
+raised), ardha (half), sama (even, level) — compounded with a body-part or component term
+to name a karaṇa whose defining feature is a specific spatial orientation or degree of a
+given component: a raised knee (ūrdhva-jānu-type naming), a half-executed or partially
+completed version of a fuller movement (ardha- compounds), an evenly balanced or level
+stance (sama- compounds). This family is of particular interest to Module Two's own
+Section 20 discussion of the sthāna-cārī-nṛtta-hasta component grammar, since it shows the
+naming system itself explicitly tracking gradations and partial states of a component
+parameter — evidence that the tradition's own naming convention treated the component
+vocabulary as itself internally graded and combinable, rather than as a fixed set of only
+fully realised, maximal states.</p>
+
+<h2 class="module-h">Section 6 — Documented Points of Cross-Source Disagreement</h2>
+
+<h3 class="sec-h">6.1 — Regional Recension Variation in Sequence and Count</h3>
+
+<p><span class="tier-textual tier-tag">Established Textual-Critical Fact</span>The
+Nāṭyaśāstra's own editors, across the major printed critical editions this catalogue has
+consulted, document that different regional manuscript traditions — broadly grouped, in
+the standard textual-critical literature on the work, into distinguishable recensional
+families associated with different regions of transmission — do not always agree precisely
+on the sequence or, in a smaller number of specific cases, the presence of individual items
+within enumerated lists of the kind the karaṇa catalogue represents. This is a documented,
+openly discussed feature of Nāṭyaśāstra textual scholarship generally, addressed directly
+in the critical apparatus of the major editions, rather than a marginal or obscure
+textual-critical footnote this catalogue is unusually raising for the first time.</p>
+
+<h3 class="sec-h">6.2 — Editorial Choices in Printed Critical Editions</h3>
+
+<p><span class="tier-synthetic tier-tag">Structural Application</span>A direct consequence
+of Section 6.1, worth stating plainly for any reader relying on a single printed edition or
+translation as though it offered an uncontested, singular textual fact: an edition's own
+editor has, at various points across the karaṇa catalogue, necessarily made a judgment call
+among competing recensional readings, a judgment this catalogue treats as itself a piece of
+evidence about that editor's own textual-critical reasoning rather than as an
+uncontestable fact the karaṇa system itself straightforwardly supplies. This is precisely
+why Section 3's grading system requires this catalogue, and any future contributor to it,
+to cite a specific edition when asserting a specific numbered position or specific wording
+for a given karaṇa, rather than asserting "the Nāṭyaśāstra states" as though the text spoke
+with a single unmediated voice on every disputed point.</p>
+
+<h3 class="sec-h">6.3 — Divergence Between Sculptural Labelling and Textual Numbering</h3>
+
+<p><span class="tier-frontier tier-tag">Open Question</span>A further, distinct source of
+potential disagreement this catalogue flags without being able to resolve from the sources
+available to it: where a Chidambaram panel's own inscribed label can be confidently read
+(Module Two, Section 2.1), the sequence in which panels are physically arranged around the
+gopuram's own architecture does not necessarily need to match the Nāṭyaśāstra's own
+textual sequence number for number, since a sculptural programme's own arrangement is
+constrained by architectural factors — available niche space, tier structure, processional
+viewing sequence — that have no direct textual counterpart. Whether the Chidambaram
+programme's own physical arrangement does, in fact, track the Nāṭyaśāstra's own textual
+sequence closely, loosely, or not at all is exactly the kind of question Module Two, Section
+5.3 already identified as requiring a complete, panel-by-panel photogrammetric and
+epigraphic survey to answer with confidence, and this catalogue restates that same
+unresolved question here as directly relevant to its own project.</p>
+
+<h2 class="module-h">Section 7 — Toward Completion: What a Fully Populated Catalogue Requires</h2>
+
+<div class="note-box">
+<strong>A direct statement of scope.</strong> This module has not produced, and does not
+claim to have produced, a complete 108-row table graded uniformly at Grade A. It has
+produced the methodology such a table requires, one fully worked Grade-A entry as a proof
+of method, a structured account of the naming system's own internal grammar independent of
+resolving every unit's numbered position, and a direct statement of the documented
+cross-source disagreements any future contributor must navigate rather than paper over.
+That is what an honest Module Three can responsibly deliver at this stage of the series'
+own research programme.
+</div>
+
+<p><span class="tier-frontier tier-tag">Open Research Programme</span>A complete, Grade-A
+throughout, 108-entry catalogue would require, at minimum: a systematic collation of the
+karaṇa chapter across the major documented recensional families, of the kind Section 6.1
+describes existing scholarship as already partially addressing but not, to this module's
+knowledge, fully resolving into a single reconciled apparatus specific to the karaṇa
+catalogue; a complete search of the surviving Abhinavabhāratī text identifying every
+passage bearing on a specific karaṇa, cross-referenced against Section 3's grading
+criteria; the panel-by-panel photogrammetric and epigraphic survey of Chidambaram, and of
+the further sites Module Two's Part 3 treated with appropriate caution, that this series has
+now called for at three separate points across two modules; and a systematic cross-check
+against the <em>Abhinaya Darpaṇa</em> and <em>Saṅgīta Ratnākara</em> for every unit, rather
+than the illustrative, name-morphology-based treatment Section 5 above offers as a
+responsible interim substitute. This module states this scope directly rather than
+understating the work still required, in the same spirit Module Two closed on: an actively
+open, ongoing scholarly project, not a closed file this series is pretending to have
+completed in miniature.</p>
+
+<div class="synth-close">
+<h3 class="sec-h" style="margin-top:0;">Closing Synthesis</h3>
+<p>
+This module set out to build the critical catalogue Module Two's own closing footer
+promised, and has built its actual foundation rather than a false facsimile of its completed
+form. Sections 1 through 3 established why a critical catalogue is a discipline rather than
+a list, operationalised Module Two's own four-source method at the level of the individual
+entry, and introduced a four-grade confidence system this catalogue, and any future
+contribution to it, is bound by. Section 4 applied that system to the single entry —
+Talapuṣpapuṭa, the catalogue's own opening unit — this module can currently defend at full
+Grade A confidence, and stated directly where even that entry's own confidence stops short
+of covering every possible claim about it. Section 5 turned to the naming system's own
+internal grammar — rotational, percussive, zoomorphic, and quantitative-directional compound
+families — as a genuine source of scholarly content available independent of resolving
+every unit's precise numbered position, extracting real interpretive value from the
+tradition's own naming conventions without overclaiming certainty the primary sources do not
+yet support. Section 6 stated the documented sources of cross-source disagreement directly:
+regional recensional variation, editorial choice in printed editions, and the still-open
+question of whether Chidambaram's own physical arrangement tracks the Nāṭyaśāstra's own
+textual sequence. Section 7 closed by stating plainly what remains before a complete,
+uniformly Grade-A table can exist, and by whom that work would need to be done. The
+honest state of this series' own project, at the close of its third module, is this: the
+karaṇa system's own textual, commentarial, sculptural, and comparative-treatise registers
+are richer, more cross-referenced, and more internally coherent than a casual survey of
+popular secondary literature would suggest — and a genuinely complete, citation-grade
+reconciliation of all 108 units across all four registers simultaneously remains, honestly
+stated, unfinished work this series has now mapped precisely enough for a future
+contributor, inside or outside this project, to actually complete it.
+</p>
+</div>
+
+<h2 class="module-h">Reference Apparatus</h2>
+<ol class="ref-list">
+<li>Bharata. <em>Nāṭyaśāstra</em>, Chapter Four. Gaekwad Oriental Series critical edition, ed. M. Ramakrishna Kavi.</li>
+<li>Ghosh, Manomohan (trans.). <em>The Nāṭyaśāstra: A Treatise on Hindu Dramaturgy and Histrionics</em>. Asiatic Society, Calcutta.</li>
+<li>Abhinavagupta. <em>Abhinavabhāratī</em>, commentary on the Nāṭyaśāstra.</li>
+<li>Nandikeśvara (attrib.). <em>Abhinaya Darpaṇa</em>.</li>
+<li>Śārṅgadeva. <em>Saṅgīta Ratnākara</em>.</li>
+<li>Subrahmanyam, Padma. <em>Karana in Indian Dance and Sculpture</em>. Nrithyodaya, Chennai.</li>
+<li>Vatsyayan, Kapila. <em>Bharata: The Nāṭyaśāstra</em>. Sahitya Akademi, New Delhi.</li>
+<li>Rangacharya, Adya (trans.). <em>The Nāṭyaśāstra: English Translation with Critical Notes</em>. Munshiram Manoharlal.</li>
+<li>Monier-Williams, Monier. <em>A Sanskrit-English Dictionary</em>, entries consulted for compound-name morphological analysis in Section 5.</li>
+</ol>
+
+<footer class="nav-footer">
+  <span>← Module Two: The Epigraphic and Art-Historical Register</span>
+  <span>Module Four →</span>
+</footer>
+
+</div>
 </body>
 </html>
+
 
 
